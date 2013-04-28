@@ -1,0 +1,10 @@
+rm -rf #install-path#
+mkdir #install-path#
+cd #save-path#
+tar zvxf #full-name#
+cd #name#
+./configure --prefix=#install-path# #parameter#
+make
+make install
+cd
+echo "PATH=$PATH:#install-path#/bin" >> .bashrc

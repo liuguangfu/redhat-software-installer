@@ -1,0 +1,9 @@
+rm -rf #install-path#
+mkdir #install-path#
+cd #save-path#
+tar zvxf #save-path#/#full-name#
+cd #name#
+cp -R * #install-path#
+cd
+echo "PATH=$PATH:#install-path#/bin" >> .bashrc
+echo "export JAVA_HOME=#install-path#" >> .bashrc

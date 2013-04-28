@@ -1,0 +1,8 @@
+rm -rf #install-path#
+mkdir #install-path#
+cd #save-path#
+tar zxvf #full-name#
+cd #name#
+cp -R * #install-path#
+cd
+echo "PATH=$PATH:#install-path#/bin" >> .bashrc
